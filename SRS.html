@@ -1,0 +1,206 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Drunken Adventure</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+</head>
+<body>
+
+
+<div id="container">
+
+	<div id="wrapper">
+		<div id="content">
+		<h2>1.0 Introduction</h2>
+
+		<p><strong>1.1 The purpose of this document</strong></p>
+		<p>This is the Drunken Adventure software requirement specification document for the Eagle Day Software. This document will provide a general description of the game along with the software requirements. The final product will be traceable to this requirements document.</p>
+		<p><strong>1.2 The scope of this product</strong></p>
+		<p>The Eagle Day Software is a 32-bit Windows application. The application targets users who are familiar with the rules. The application replicates the historical simulation board game Eagle Day. The application is written in Lua using the Love library.</p>
+		<p><strong>1.3 Definitions, Acronyms, and Abbreciations</strong></p>
+		<p>
+			<ul>
+				<li><strong>Lua - </strong>A lightweight, cross-platform, multi-paradigm programming language designed as a scripting language.</li>
+				<li><strong>LÖVE - </strong>An open-source framework for making 2D games in the Lua programming language.</li>
+				<li><strong>Application - </strong>The Eagle Day software.</li>
+				<li><strong>Eagle Day - </strong>The software project being developed by Drunken Adventure based off Eagle Day: The Battle For Britain by Decision Games.</li>
+				<li><strong>Eagle Day: The Battle For Britain - </strong>The board game.</li>
+				<li><strong>Drunken Adventure - </strong>The team developing Eagle Day, made up of Isaac Obrist, Micah Nakamura, and James Dawson.</li>
+				<li><strong>Decision Games - </strong>Company that made Eagle Day: The Battle For Britain</li>
+				<li><strong>Git - </strong>A distributed revision control and SCM system with an emphasis on speed, designed and developed by Linus Torvalds for Linux.</li>
+				<li><strong>Linux - </strong>A Unix-like opperating system ketnel.</li>
+				<li><strong>SCM - </strong>Source Code Management – version control and system control allowing the management of changes to documents, computer programs, large web sites, and other collections of information.</li>
+				<li><strong>Kernel - </strong>a part of an operating system that handles control of all running processes.</li>
+				<li><strong>GitHub - </strong>A web-based hosting service for software development projects that use the Git revision control system.</li>
+				<li><strong>Revision Control</strong>Also known as Source Code Management(SCM).</li>
+			</ul>
+			<!--Jimmy, please add these things as definitions. Follow proper formatting 
+			<p><strong>Things to be added</strong></p>
+			<p>GUI – Graphical User Interface - 
+				Biola
+				Client
+				Dr. McCarty
+				HTML
+				SRS
+				SSD
+				PMP
+				SCMP
+				STP
+				SUM
+				PPR
+				SQAP
+				RP
+				Multimedia
+			</p> -->
+		</p>
+		<p><strong>1.4 References</strong></p>
+		<!-- Please add content for this section -->
+		<p>Some text.</p>
+		<p><strong>1.5 Overview of the rest of SRS</strong></p>
+		<!-- Please add content for this section -->
+		<p>Some text.</p>
+
+		<h2>2.0 General Description</h2>
+		<p><strong>2.1 Procuct Perspective</strong></p>
+		<p>Eagle Day is a multimedia application that replicates the historical simulation board game, “Eagle Day: The Battle For Britain” designed by Decision Games. Eagle Day provides a means of playing Eagle Day: The Battle For Britain. It allows two players to play against each other via network or locally on the same computer. Eagle Day also allows a single player to play against a computer.</p>
+		<p>A rudementary representation of this is as follows.</p>
+		<!-- Jimmy or Micah please resize this image to something that looks more preportional. Do not do it in the html/css itself, but change the actual image.-->
+		<img src="chart.jpg">
+
+		<p><strong>2.2... <!-- add title to this section --></strong></p>
+		<p>The following traceability matrix describes all the requirements placed on the development team by the client. The client requirements described below was listed in the problem description for a system modeling tool. The client requirements act as a contract between the client and the development team, ensuring that Eagle Day meet the expectations of the client. In addition to the client requirements, several requirements have been derived from the list of client requirements. Every requirement described in this section shall be described later in this document at the locations specified in the reference column. </p>
+		<p>
+			<table>
+				<tr>
+					<th>Number</th>
+					<th>Client Requirement or Constrain</th>
+					<th>References</th>
+				</tr>
+				<tr>
+					<td>CR01</td>
+					<td>Create a freeware 32 bit Windows Application</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>CR02</td>
+					<td>This applications shall be implimented using Lua with LOVE.</td>
+					<td>3.1.1.1</td>
+				</tr>
+				<tr>
+					<td>CR03</td>
+					<td>Whenever the application detects an error condition, a suitable error message shall be displayed to the user.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>CR04</td>
+					<td>Should be supported under Windows.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>CR05</td>
+					<td>The tool shall have an easy to use graphical user interface (GUI).</td>
+					<td>(3.1.1.1, 3.1.1.3, 3.1.1.4)</td>
+				</tr>
+				<tr>
+					<td>CR06</td>
+					<td>The application should be able to have two players play locally on the same computer.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>CR07</td>
+					<td>The application should be able to have two players play across a network.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>CR08</td>
+					<td>The application should allow for a single player to play against an AI computer.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>CR09</td>
+					<td>The application should be a program that can be used to run the Eagle Day game software.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>CR10</td>
+					<td>The application should accurately portray the Eagle Day: The Battle For Britain game board.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>CR11</td>
+					<td>The application should accurately portray the Eagle Day: The Battle For Britain game pieces.</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>CR12</td>
+					<td>The application should accurately portray the Eagle Day: The Battle For Britain game play.</td>
+					<td></td>
+				</tr>
+				<!--
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr> -->
+			</table>
+		</p>
+		<p><strong>2.3 User Characteristics</strong></p>
+		<p>Users are expected to be able to user a mouse and navigate through a Windows environment in order to use Eagle Day. Users are expected to either already know and understand the rules of Eagle Day: The Battle of Britain or learn for them self using the rules that will be provided in the application.</p>
+
+		<p><strong>2.4 General Constraints</strong></p>
+		<p>Eagle Day shall be designed to run on a computer running a version of Windows 7 or Window 8. The computer should be compatible with the LÖVE framework.</p>
+
+		<p><strong>2.5 Assumptions and Dependencies</strong></p>
+		<p>
+		The Eagle Day application assumes that, or depends upon, the following environmental characteristic being present for full functionality:
+			<ol>
+				<li>The General Constraints listed in section 2.4 of the SRS are met</li>
+				<li>The customer shall have permission to install the Eagle Day application on the required workstation(s).</li>
+			</ol>
+		</p>
+
+		<h2>3.0 Software Requirements</h2>
+
+		<p><strong>3.1 Behavioral Requirements</strong></p>
+		<p>This section of the SRS provides the behavioral requirements of Eagle Day</p>
+
+		
+		<!-- Do not number anything after 3.1.1.1. ie do not add another . There shall be no 3.1.1.1.1 its a formating nightmare !!!!-->
+		<p>3.1.1 Graphical User Interface</p>
+		<p>
+			<ul>
+				<li>3.1.1.1: The display should respond to mouse movements.</li>
+				<li>3.1.1.2: The GUI will be coded using LOVE.</li>
+				<li>3.1.1.3: When the Eagle Day executable file is run, there will be a graphical user interface.</li>
+				<li>3.1.1.4: The GUI will involve a realistic map of the board.</li>
+				<li>3.1.1.5: There will be players that will be easy to differentiate.</li>
+			</ul>
+		</p>
+		</div>
+	</div>
+
+	<div id="navigation">
+		<p><strong>Menu</strong></p>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="SRS/SRS.html">SRS</a></li>
+			
+		</ul>
+	</div>
+	<div id="extra">
+		<p><strong>Page Map</strong></p>
+	</div>
+	<div id="footer">
+		<p>This is the footer</p>
+	</div>
+
+</div>
+
+
+
+</body>
+</html>
